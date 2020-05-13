@@ -16,6 +16,10 @@
 		5B288E5D2468B0AD006E8A41 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5B288E5C2468B0AD006E8A41 /* RealmSwift */; };
 		5B288E5F2468B2BB006E8A41 /* TasksTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B288E5E2468B2BB006E8A41 /* TasksTableVC.swift */; };
 		5B288E612468BBF8006E8A41 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B288E602468BBF8006E8A41 /* Task.swift */; };
+		5B288E672468D9C5006E8A41 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B288E652468D9C5006E8A41 /* TaskCell.swift */; };
+		5B288E682468D9C5006E8A41 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B288E662468D9C5006E8A41 /* TaskCell.xib */; };
+		5B288E6C2469C712006E8A41 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B288E6A2469C712006E8A41 /* EmptyCell.swift */; };
+		5B288E6D2469C712006E8A41 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B288E6B2469C712006E8A41 /* EmptyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		5B288E522468AE23006E8A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B288E5E2468B2BB006E8A41 /* TasksTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableVC.swift; sourceTree = "<group>"; };
 		5B288E602468BBF8006E8A41 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5B288E652468D9C5006E8A41 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		5B288E662468D9C5006E8A41 /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		5B288E6A2469C712006E8A41 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		5B288E6B2469C712006E8A41 /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +73,6 @@
 				5B288E622468BC08006E8A41 /* Model */,
 				5B288E632468BC14006E8A41 /* View */,
 				5B288E642468BC19006E8A41 /* Controller */,
-				5B288E4A2468AE1F006E8A41 /* Main.storyboard */,
 				5B288E582468AF45006E8A41 /* Support */,
 			);
 			path = ToDoList;
@@ -94,6 +101,8 @@
 		5B288E632468BC14006E8A41 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B288E4A2468AE1F006E8A41 /* Main.storyboard */,
+				5B288E692468D9E2006E8A41 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,6 +113,17 @@
 				5B288E5E2468B2BB006E8A41 /* TasksTableVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B288E692468D9E2006E8A41 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5B288E652468D9C5006E8A41 /* TaskCell.swift */,
+				5B288E662468D9C5006E8A41 /* TaskCell.xib */,
+				5B288E6A2469C712006E8A41 /* EmptyCell.swift */,
+				5B288E6B2469C712006E8A41 /* EmptyCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +191,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B288E682468D9C5006E8A41 /* TaskCell.xib in Resources */,
+				5B288E6D2469C712006E8A41 /* EmptyCell.xib in Resources */,
 				5B288E512468AE23006E8A41 /* LaunchScreen.storyboard in Resources */,
 				5B288E4E2468AE23006E8A41 /* Assets.xcassets in Resources */,
 				5B288E4C2468AE1F006E8A41 /* Main.storyboard in Resources */,
@@ -188,6 +210,8 @@
 				5B288E452468AE1F006E8A41 /* AppDelegate.swift in Sources */,
 				5B288E472468AE1F006E8A41 /* SceneDelegate.swift in Sources */,
 				5B288E5F2468B2BB006E8A41 /* TasksTableVC.swift in Sources */,
+				5B288E672468D9C5006E8A41 /* TaskCell.swift in Sources */,
+				5B288E6C2469C712006E8A41 /* EmptyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
